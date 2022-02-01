@@ -19,7 +19,7 @@ while True:
 	if op.multi_face_landmarks:
 		for i in op.multi_face_landmarks:
 			print(i.landmark[0].y*480)
-			draw.draw_landmarks(frm, i, facmesh.FACE_CONNECTIONS, landmark_drawing_spec=draw.DrawingSpec(color=(0, 255, 255), circle_radius=1))
+			draw.draw_landmarks(frm, i, facmesh.FACEMESH_CONTOURS, landmark_drawing_spec=draw.DrawingSpec(color=(0, 255, 255), circle_radius=1))
 
 
 	cv2.imshow("window", frm)
